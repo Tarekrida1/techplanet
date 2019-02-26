@@ -1,0 +1,212 @@
+@import '../../../styles.scss';
+
+/****************************** start nav **************/
+
+.navbar {
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 100;
+    top: 0;
+    @include tran(0.5s);
+    /* logo */
+    #brand {
+        position: fixed;
+        @include tran(.5s);
+        top: -20px;
+        left: 20px;
+        z-index: 9999;
+        background-image: url(../../../assets/img/brand.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px;
+        background-position: bottom;
+        padding: 20px 30px;
+        span {
+            font-size: 35px;
+            font-weight: bold;
+            color: $maincolor2
+        }
+        span:nth-of-type(2) {
+            color: $maincolor !important;
+            font-weight: 400
+        }
+    }
+    /* logo */
+}
+
+.navbar .menu {
+    width: 0;
+    height: 0;
+    background-image: -webkit-linear-gradient(-90deg, rgba(26, 208, 190, 0.9), rgba(14, 166, 177, 0.9)50%);
+    background-image: -o-linear-gradient(-90deg, rgba(26, 208, 190, 0.9), rgba(14, 166, 177, 0.9)50%);
+    background-image: -ms-linear-gradient(-90deg, rgba(26, 208, 190, 0.9), rgba(14, 166, 177, 0.9)50%);
+    background-image: -moz-linear-gradient(-90deg, rgba(26, 208, 190, 0.9), rgba(14, 166, 177, 0.9)50%);
+    background-image: linear-gradient(-90deg, rgba(26, 208, 190, 0.9), rgba(14, 166, 177, 0.9)50%);
+    text-align: center;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    position: fixed;
+    right: 0px;
+    overflow-y: auto;
+    z-index: 90;
+    top: 0px;
+    padding: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    padding-top: 25vh;
+    @include bradius(0 0 0 20%);
+    @include bshadow( -12px 9px 35px -12px)
+}
+
+.menu a {
+    color: #fff !important;
+    padding: 10px 0;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: inherit;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+.click {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 9999;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    @include bradius(50%);
+    @include tran(.5s);
+}
+
+.click-style {
+    position: absolute;
+    @include bradius(0);
+    z-index: 9999;
+    background-image: url(../../../assets/img/click.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 75px;
+    top: 0;
+    right: 20px;
+    width: 75px;
+    span {
+        background: $maincolor2 !important;
+        margin-left: 24px !important;
+        margin-top: 7px !important;
+    }
+}
+
+.click-bg {
+    background: linear-gradient($maincolor, $maincolor2);
+    background: -webkit-linear-gradient($maincolor, $maincolor2);
+    background: -o-linear-gradient($maincolor, $maincolor2);
+    background: -moz-linear-gradient($maincolor, $maincolor2);
+    background: -ms-linear-gradient($maincolor, $maincolor2);
+}
+
+.click span {
+    height: 2px;
+    width: 25px;
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    margin: -2px 8px;
+    border-radius: 15px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.click span:nth-of-type(1) {
+    top: 13px;
+    left: 0;
+}
+
+.click span:nth-of-type(2) {
+    top: 22px;
+    left: 0;
+}
+
+.click span:last-child {
+    top: 30px;
+    left: 0;
+}
+
+#toggle:checked~.menu {
+    opacity: 1;
+    width: 250px;
+    height: 100%;
+    border-radius: 0;
+}
+
+.click:hover span:nth-of-type(1) {
+    top: 12px;
+}
+
+.click:hover span:nth-of-type(3) {
+    top: 31px;
+}
+
+#toggle:checked~.click {
+    right: 270px;
+}
+
+#toggle:checked~.click span:nth-of-type(2) {
+    background: transparent !important;
+}
+
+#toggle:checked~.click span:nth-of-type(1) {
+    top: 22px;
+    left: 0px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+}
+
+#toggle:checked~.click span:last-child {
+    top: 22px;
+    left: 0px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+}
+
+.navbar.custom-nav {
+    background: rgba(255, 255, 255, 0.95);
+    @include bshadow(0 0 8px 0);
+}
+
+#toggle {
+    display: none;
+}
+
+
+/****************************** end nav *****************/
+
+@media (max-width: 769px) {
+    #toggle:checked~#brand {
+        transform: translateX(-200%);
+    }
+}

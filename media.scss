@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+    .carousel-item img {
+        position: sticky
+    }
+    .carousel-item .carousel-caption {
+        top: none;
+        -webkit-transform: none;
+        transform: none;
+        left: 0;
+        right: 0;
+        padding: 10px
+    }
+}

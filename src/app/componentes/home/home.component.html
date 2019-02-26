@@ -1,0 +1,313 @@
+<!------ start slider -->
+<ngb-carousel>
+    <ng-template ngbSlide class="slide0" *ngFor="let slide of mainCarousel; index as i">
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <img [src]="slide.img" alt="Random first slide">
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="carousel-caption">
+                            <h3>{{ slide.mainHead }}</h3>
+                            <h6>{{ slide.secondHead }}</h6>
+                            <p>{{ slide.desc }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+</ngb-carousel>
+
+<!------ end slider -->
+<!-- Start About Section -->
+<section class="about">
+    <div class="container">
+        <div class="section-title text-center">
+            Who <span>We</span> Are?
+        </div>
+
+        <div class="row about-row">
+            <div class="col-md-6">
+                <img class="about-img" src="http://www.p3geeks.com/img/about.png">
+            </div>
+            <div class="col-md-6">
+                <p class="about-desc">
+                    <b> We provide great services and ideas. </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ducimus harum facilis soluta cumque repellat non! Laudantium blanditiis aliquam error, quo repellat laborum at deserunt doloribus,
+                    nemo earum eaque. Nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. In ducimus harum facilis soluta cumque repellat non! Laudantium blanditiis aliquam error, quo repellat laborum at deserunt doloribus, nemo earum eaque.
+                    Nesciunt.
+                </p>
+                <button class="btn custom-btn">Read More</button>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- End About Section -->
+<!-- start what we do ?-->
+
+<section id='new' class="do">
+    <div class="container">
+        <h2 class="do-head text-center">What <span>We</span> Do?</h2>
+        <p class="lead text-center do-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. In ducimus harum facilis soluta cumque repellat non! Laudantium blanditiis aliquam error, quo repellat laborum at deserunt doloribus, nemo earum eaque. Nesciunt.</p>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="we-do">
+                    <span class="icon"> <i class="fas fa-mobile-alt"></i></span>
+                    <h3 class="text-center">Mobile applications</h3>
+                    <p>We create native and cross-platform mobile applications for iPhone and Android devices. Our approach and technology is determined by the needs of the application and the business. For frontend development of apps we use ReactNative,
+                        Obj-C, JAVA, Cordova, HTML5, Adobe AIR and AngularJS. All that combined with a powerful backend on NodeJS, MongoDB, PHP and others.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="we-do">
+                    <span class="icon"> <i class="fas fa-laptop-code"></i></span>
+                    <h3 class="text-center">Web development</h3>
+                    <p>We create native and cross-platform mobile applications for iPhone and Android devices. Our approach and technology is determined by the needs of the application and the business. For frontend development of apps we use ReactNative,
+                        Obj-C, JAVA, Cordova, HTML5, Adobe AIR and AngularJS. All that combined with a powerful backend on NodeJS, MongoDB, PHP and others.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="we-do">
+                    <span class="icon"><i class="fas fa-palette"></i></span>
+                    <h3 class="text-center">Graphics design</h3>
+                    <p>We create native and cross-platform mobile applications for iPhone and Android devices. Our approach and technology is determined by the needs of the application and the business. For frontend development of apps we use ReactNative,
+                        Obj-C, JAVA, Cordova, HTML5, Adobe AIR and AngularJS. All that combined with a powerful backend on NodeJS, MongoDB, PHP and others.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="we-do">
+                    <span class="icon"><i class="fas fa-bezier-curve"></i></span>
+                    <h3 class="text-center">Cross-Platform</h3>
+                    <p>We create native and cross-platform mobile applications for iPhone and Android devices. Our approach and technology is determined by the needs of the application and the business. For frontend development of apps we use ReactNative,
+                        Obj-C, JAVA, Cordova, HTML5, Adobe AIR and AngularJS. All that combined with a powerful backend on NodeJS, MongoDB, PHP and others.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="we-do">
+                    <span class="icon"><i class="fas fa-gamepad"></i></span>
+                    <h3 class="text-center">Games</h3>
+                    <p>We create native and cross-platform mobile applications for iPhone and Android devices. Our approach and technology is determined by the needs of the application and the business. For frontend development of apps we use ReactNative,
+                        Obj-C, JAVA, Cordova, HTML5, Adobe AIR and AngularJS. All that combined with a powerful backend on NodeJS, MongoDB, PHP and others.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="we-do">
+                    <span class="icon"><i class="fas fa-video"></i></span>
+                    <h3 class="text-center">TV/Video clips</h3>
+                    <p>We create native and cross-platform mobile applications for iPhone and Android devices. Our approach and technology is determined by the needs of the application and the business. For frontend development of apps we use ReactNative,
+                        Obj-C, JAVA, Cordova, HTML5, Adobe AIR and AngularJS. All that combined with a powerful backend on NodeJS, MongoDB, PHP and others.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!----end whate we do ?-->
+
+<!--start more-->
+<section class="more">
+    <div class="container">
+        <div class="row">
+            <div class="more-pic col-md-6 col-sm-12">
+                <img src="../../../assets/img/mobile.png" alt="" srcset="">
+            </div>
+            <div class="more-text col-md-6 col-sm-12">
+                <div class="more-feat">
+                    <h3><i class="fas fa-mobile-alt"></i> Mobile App Development</h3>
+                    <h5>Are You Looking For The Best Solution For Your Business?</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum quo voluptatem reprehenderit ut, facilis molestiae illo nesciunt voluptates minima aspernatur possimus minus, consequatur dolore dicta consequuntur nam eius, sequi doloremque?
+                    </p>
+                    <button class="custom-btn g-btn more-btn">Read more</button>
+                </div>
+                <div class="more-feat">
+                    <h3><i class="fas fa-edit"></i> Custom Mobile App</h3>
+                    <h5>The Advantages Of Our Custom Mobile App Development Services.</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum quo voluptatem reprehenderit ut, facilis molestiae illo nesciunt voluptates minima aspernatur possimus minus, consequatur dolore dicta consequuntur nam eius, sequi doloremque?
+                    </p>
+                    <button class="custom-btn g-btn more-btn">Read more</button>
+                </div>
+                <div class="more-feat">
+                    <h3><i class="fas fa-heart"></i> BEAUTY SERVICES APP</h3>
+                    <h5> hairstyle marketplace aims to connect people to the best local barber.</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum quo voluptatem reprehenderit ut, facilis molestiae illo nesciunt voluptates minima aspernatur possimus minus, consequatur dolore dicta consequuntur nam eius, sequi doloremque?
+                    </p>
+                    <button class="custom-btn g-btn more-btn">Read more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="more">
+    <div class="container">
+        <div class="row">
+            <div class="row-fluid">
+                <div class="more-pic float-right col-md-6 col-sm-12">
+                    <img src="../../../assets/img/Book.png" alt="" srcset="">
+                </div>
+                <div class="more-text float-left  text-left col-md-6 col-sm-12">
+                    <div class="more-feat">
+                        <h3><i class="fas fa-desktop"></i> Web Design</h3>
+                        <h5>We have a vast experience in redesigning the website</h5>
+                        <p>We at Yulanto believe in responsive website design. We design not only exclusive website for our customers ,Nowadays with the growing entrepreneurial ventures, the phase start-ups have become a very common phenomenon in the business.
+                        </p>
+                        <button class="custom-btn g-btn more-btn">Read more</button>
+                    </div>
+                    <div class="more-feat">
+                        <h3><i class="fas fa-laptop-code"></i> Web Development</h3>
+                        <h5>The Advantages Of Our Custom Mobile App Development Services.</h5>
+                        <p>We have expert on wordpress which is Well-designed CMS Platform In Order To Support Your Business Contents The Ecommerce web development is the paramount parameter for a successful rendition of an ecommerce website.</p>
+                        <button class="custom-btn g-btn more-btn">Read more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--start more-->
+<section class="more">
+    <div class="container">
+        <div class="row">
+            <div class="more-pic col-md-6 col-sm-12">
+                <img src="../../../assets/img/graphic.svg" alt="" srcset="">
+            </div>
+            <div class="more-text col-md-6 col-sm-12">
+                <div class="more-feat">
+                    <h3><i class="fas fa-object-group"></i> Infographics Design</h3>
+                    <h5>High-quality infographics</h5>
+                    <p>our designers understand how to convey ideas and data in the most visually appealing way.</p>
+                    <button class="custom-btn g-btn more-btn">Read more</button>
+                </div>
+                <div class="more-feat">
+                    <h3><i class="fas fa-pen-nib"></i> Logos and Branding</h3>
+                    <h5>The logo is a visual first impression</h5>
+                    <p>We’ve perfected the process of building unforgettable logos and branding.</p>
+                    <button class="custom-btn g-btn more-btn">Read more</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--end more-->
+<!-- start download app-->
+<section class="down-app">
+    <div class="all-content">
+        <div class="container">
+            <div class="row">
+                <span class="photo col-md-4 col-sm-12">
+                        <img src="../../../assets/img/down_app.png" alt="" srcset="">
+                    </span>
+                <div class="content col-md-8 col-sm-12">
+                    <h2>A powerful application into your pocket</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, laboriosam ut velit corrupti expedita molestiae magnam aliquam tenetur ipsa facilis quibusdam cumque, quis nobis, iste distinctio maiores? Pariatur molestiae magnam aliquam
+                        tenetur ipsa facilis quibusdam cumque, quis nobis, iste distinctio maiores? Pariatur, facilis eius.</p>
+                    <span class="down">
+                            <button class="custom-btn"> <i class="fab fa-android"></i><span> Download Android</span></button>
+                    <button class="custom-btn"> <i class="fab fa-apple"></i><span> Download ios</span></button>
+                    </span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end download app-->
+<!--start features -->
+<section class="our-pricing">
+    <div class="container">
+        <h3>Pricing Packages</h3>
+        <p class="par">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="price col-md-4 col-sm-12">
+                <div class="price-container">
+
+
+                    <h4>Standard Pack</h4>
+                    <p class="sallery"><span><sup>$</sup>50</span>/MONTH</p>
+                    <ul>
+                        <li><i class="fa fa-check"></i>1 License</li>
+                        <li><i class="fa fa-check"></i>Content Editor</li>
+                        <li><i class="fa fa-check not-available"></i>Fully Responsive</li>
+                        <li><i class="fa fa-check not-available"></i>Custom Fontsets</li>
+                        <li><i class="fa fa-check not-available"></i>Retina Ready</li>
+                        <li><i class="fa fa-check not-available"></i>Fullscreen Cover</li>
+                    </ul>
+                    <button class="custom-btn">SIGN IN NOW</button>
+                </div>
+            </div>
+            <div class="price col-md-4 col-sm-12">
+                <div class="price-container">
+                    <h4>Best Pack</h4>
+                    <p class="sallery"><span><sup>$</sup>100</span>/MONTH</p>
+                    <ul>
+                        <li><i class="fa fa-check"></i>1 License</li>
+                        <li><i class="fa fa-check"></i>Content Editor</li>
+                        <li><i class="fa fa-check"></i>Fully Responsive</li>
+                        <li><i class="fa fa-check"></i>Custom Fontsets</li>
+                        <li><i class="fa fa-check not-available"></i>Retina Ready</li>
+                        <li><i class="fa fa-check not-available"></i>Fullscreen Cover</li>
+                    </ul>
+                    <button class="custom-btn">SIGN IN NOW</button>
+                </div>
+            </div>
+            <div class="price col-md-4 col-sm-12">
+                <div class="price-container">
+                    <h4>Premium Pack</h4>
+                    <p class="sallery"><span><sup>$</sup>250</span>/MONTH</p>
+                    <ul>
+                        <li><i class="fa fa-check"></i>1 License</li>
+                        <li><i class="fa fa-check"></i>Content Editor</li>
+                        <li><i class="fa fa-check"></i>Fully Responsive</li>
+                        <li><i class="fa fa-check"></i>Custom Fontsets</li>
+                        <li><i class="fa fa-check"></i>Retina Ready</li>
+                        <li><i class="fa fa-check"></i>Fullscreen Cover</li>
+                    </ul>
+                    <button class="custom-btn">SIGN IN NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end features-->
+<!--- start sign up -->
+<div class="signup">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <img src="../../../assets/img/signup.svg" alt="" srcset="">
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control" placeholder="Mobile Number">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="What Is Your Jop Title?">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control textarea" id="exampleFormControlTextarea1" rows="3" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--- end sign up -->
